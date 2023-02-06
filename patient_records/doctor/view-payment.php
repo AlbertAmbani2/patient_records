@@ -9,10 +9,10 @@ if(isset($_POST['submit']))
   {
     
     $eid=$_GET['viewid'];
-	$patname=$_POST['PatientName'];
-	$patcontact=$_POST['PatientContno'];
-	$code=$_POST['Code'];
-	$amount=$_POST['Amount'];
+	$patname=$_POST['patname'];
+	$patcontact=$_POST['patcontact'];
+	$code=$_POST['code'];
+	$amount=$_POST['amount'];
 	
     
     $query.=mysqli_query($con,"insert tblpaymenthistory set PatientName='$patname',PatientContno='$patcontact',Code='$code',Amount='$amount' where ID='$eid'");
@@ -86,31 +86,44 @@ while ($row=mysqli_fetch_array($ret)) {
  <tr align="center">
 <td colspan="4" style="font-size:20px;color:blue">
  Patient Details</td></tr>
+ 
+ <div class="form-group">
+<label for="doctorname">
+Patient Name
+</label>
+<input type="text" name="patname" class="form-control"  value="<?php  echo $row['PatientName'];?>" required="true">
+</div>
 
-    <tr>
-    <th scope>Patient Name</th>
-    <td><?php  echo $row['PatientName'];?></td>
-      
-    <th scope>Patient Mobile Number</th>
-    <td><?php  echo $row['PatientContno'];?></td>
-    
-    <th>Code</th>
-    <td><?php  echo $row['Code'];?></td>
+<div class="form-group">
+<label for="doctorname">
+Patient Name
+</label>
+<input type="text" name="patname" class="form-control"  value="<?php  echo $row['PatientName'];?>" required="true">
+</div>
+<div class="form-group">
+<label for="fess">
+Patient Contact No
+</label>
+<input type="text" name="patcontact" class="form-control"  value="<?php  echo $row['PatientContno'];?>" required="true" maxlength="10" pattern="[0-9]+">
+</div>
+<div class="form-group">
+<label for="fess">
+Payment Code
+</label>
+<input type="text" id="code" name="code" class="form-control"  value="<?php  echo $row['Code'];?>">
 
-    <th>Amount</th>
-    <td><?php  echo $row['Amount'];?></td>
-  </tr>
+</div>
+
+<div class="form-group">
+<label for="address">
+Amount
+</label>
+<textarea type="text" name="amount" class="form-control" required="true"><?php  echo $row['Amount'];?></textarea>
+</div>
   
  
 <?php }?>
 </table>
-<?php  
-
-$ret=mysqli_query($con,"select * from tblpaymenthistory  where PatientID='$eid'");
-
-
-
- ?>
 
                           
 </div>

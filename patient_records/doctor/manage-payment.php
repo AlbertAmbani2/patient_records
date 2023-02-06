@@ -83,7 +83,7 @@ while($row=mysqli_fetch_array($sql))
 </td>
 <td>
 
-<a href="edit-payment.php?editid=<?php echo $cnt;?>"><i class="fa fa-edit"></i></a> || <a href="view-payment.php?viewid=<?php echo $row['ID'];?>"><i class="fa fa-eye"></i></a>
+<a href="edit-payment.php?editid=<?php echo $cnt;?>">Edit <i class="fa fa-edit"></i></a> <!--|| <a-- href="view-payment.php?viewid=<!?php echo $row['ID'];?>"><i class="fa fa-eye"></i></a-->
 
 </td>
 </tr>

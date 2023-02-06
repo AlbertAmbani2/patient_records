@@ -9,10 +9,10 @@ if(strlen($_SESSION['id']==0)) {
 if(isset($_POST['submit']))
 {	
 	$eid=$_GET['editid'];
-	$patname=$_POST['PatientName'];
-	$patcontact=$_POST['PatientContno'];
-	$code=$_POST['Code'];
-	$amount=$_POST['Amount'];
+	$patname=$_POST['patname'];
+	$patcontact=$_POST['patcontact'];
+	$code=$_POST['code'];
+	$amount=$_POST['amount'];
 	$sql=mysqli_query($con,"update tblpayment set PatientName='$patname',PatientContno='$patcontact',Code='$code',Amount='$amount' where ID='$eid'");
 	if($sql)
 {
@@ -96,7 +96,7 @@ Patient Name
 </div>
 <div class="form-group">
 <label for="fess">
-Patient Contact Number
+Patient Contact No
 </label>
 <input type="text" name="patcontact" class="form-control"  value="<?php  echo $row['PatientContno'];?>" required="true" maxlength="10" pattern="[0-9]+">
 </div>
@@ -104,15 +104,15 @@ Patient Contact Number
 <label for="fess">
 Payment Code
 </label>
-<input type="text" id="code" name="code" class="form-control"  value="<?php  echo $row['Code'];?>" readonly='true'>
-<span id="user-availability-status"></span>
+<input type="text" id="code" name="code" class="form-control"  value="<?php  echo $row['Code'];?>">
+
 </div>
 
 <div class="form-group">
 <label for="address">
 Amount
 </label>
-<input type="text" name="amount" class="form-control"  placeholder="Enter Amount" required="true">
+<textarea type="text" name="amount" class="form-control" required="true"><?php  echo $row['Amount'];?></textarea>
 </div>
 
 <?php } ?>

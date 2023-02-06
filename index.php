@@ -31,18 +31,18 @@ echo "<script>window.location.href ='index.php'</script>";
 
     <!-- ################# Header Starts Here#######################--->
     
-      <header id="menu-jk">
+      <header id="menu-jk" class="text-light">
     
-        <div id="nav-head" class="header-nav">
+        <div id="nav-head" class="bg-success header-nav">
             <div class="container">
                 <div class="row">
-                    <div style="color:#000;font-weight:bold; font-size:24px; margin-top: 1% !important;">Patient Records System
+                    <div  style="font-weight:bold; font-size:24px; margin-top: 1% !important;">Patient Records System
                        <a data-toggle="collapse" data-target="#menu" href="#menu" ><i class="fas d-block d-md-none small-menu fa-bars"></i></a>
                     </div>
                     <div id="menu" class="navbar-nav ml-auto d-none d-md-block nav-item">
                         <ul>
-                            <li><a href="#">Home</a></li>
-                               <li><a href="#logins">Logins</a></li>  
+                               <li><a href="#" style="color:white;">Home</a></li>
+                               <li><a href="#logins" style="color:white;">Logins</a></li>  
                         </ul>
                     </div>
                 </div>
