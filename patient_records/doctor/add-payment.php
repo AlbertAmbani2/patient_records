@@ -90,19 +90,23 @@ error:function (){}
 												<div class="panel-heading">
 													<h5 class="panel-title">Make Payment</h5>
 												</div>
-												<div class="panel-body">	
-													<form role="form" name="" method="post" >
+												<div class="panel-body">
+
+													<form method="POST" action="transaction.php"  id="paymentForm">
 														<div class="form-group">
 															<label for="exampleInputEmail1">
 																Enter Patient No.
 															</label>
-							<input type="number" name="doctorspecilization" class="form-control"  placeholder="Enter Patient No.">
+							<input type="number" name="patientno" class="form-control"  placeholder="Enter Patient No.">
 														</div>
-												
-														
-														
-														
-														<button type="submit"  class="btn btn-success">
+														<div class="form-group">
+															<label for="fess">
+															Amount
+															</label>
+															<input type="text" name="amount" class="form-control"  placeholder="Enter Amount" required="true">
+															</div>
+																																																					
+												<button type="submit" name="pay"  class="btn btn-success">
 															Pay Now
 														</button>
 													</form>
