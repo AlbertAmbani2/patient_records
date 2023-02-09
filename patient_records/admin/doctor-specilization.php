@@ -93,7 +93,7 @@ $_SESSION['msg']="data deleted !!";
 														
 														
 														
-														<button type="submit" name="submit" class="btn btn-o btn-primary">
+														<button type="submit" name="submit" class="btn btn-primary">
 															Submit
 														</button>
 													</form>
@@ -113,7 +113,7 @@ $_SESSION['msg']="data deleted !!";
 
 									<div class="row">
 								<div class="col-md-12">
-									<h5 class="over-title margin-bottom-15">Manage <span class="text-bold">Docter Specialization</span></h5>
+									<h5 class="over-title margin-bottom-15">Manage <span class="text-bold">Doctor Specialization</span></h5>
 									
 									<table class="table table-hover" id="sample-table-1">
 										<thead>

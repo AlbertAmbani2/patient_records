@@ -45,9 +45,10 @@ if(strlen($_SESSION['id']==0)) {
 <span>Admin</span>
 </li>
 <li class="active">
-<span>View Patients</span>
+<span>View Patient</span>
 </li>
 </ol>
+
 </div>
 </section>
 <div class="container-fluid container-fullw bg-white">

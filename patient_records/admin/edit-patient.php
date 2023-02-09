@@ -28,7 +28,7 @@ header('location:manage-patient.php');
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>Admin | Add Patient</title>
+		<title>Admin | Edit Patient</title>
 		
 		<link href="http://fonts.googleapis.com/css?family=Lato:300,400,400italic,600,700|Raleway:300,400,500,600,700|Crete+Round:400italic" rel="stylesheet" type="text/css" />
 		<link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
@@ -60,14 +60,14 @@ header('location:manage-patient.php');
 <div class="row">
 <div class="col-sm-8">
 <a href="manage-patient.php" class="btn btn-outline-light" >Back</a>
-<h1 class="mainTitle">Admin | Add Patient</h1>
+<h1 class="mainTitle">Admin | Edit Patient</h1>
 </div>
 <ol class="breadcrumb">
 <li>
 <span>Admin</span>
 </li>
 <li class="active">
-<span>Add Patient</span>
+<span>Edit Patient</span>
 </li>
 </ol>
 </div>
@@ -79,7 +79,7 @@ header('location:manage-patient.php');
 <div class="col-lg-8 col-md-12">
 <div class="panel panel-white">
 <div class="panel-heading">
-<h5 class="panel-title">Add Patient</h5>
+<h5 class="panel-title">Edit Patient</h5>
 </div>
 <div class="panel-body">
 <form role="form" name="" method="post">

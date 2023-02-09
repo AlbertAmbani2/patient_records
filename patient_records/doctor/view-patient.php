@@ -33,7 +33,7 @@ if(isset($_POST['submit']))
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>Doctor | Manage Patients</title>
+		<title>Doctor | View Patient</title>
 		
 		<link href="http://fonts.googleapis.com/css?family=Lato:300,400,400italic,600,700|Raleway:300,400,500,600,700|Crete+Round:400italic" rel="stylesheet" type="text/css" />
 		<link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
@@ -61,8 +61,8 @@ if(isset($_POST['submit']))
 <section id="page-title">
 <div class="row">
 <div class="col-sm-8">
-<a href="manage-patient.php" class="btn btn-outline-light" >Back</a>
-<h1 class="mainTitle">Doctor | Manage Patients</h1>
+<a href="manage-patient.php" class=" btn-outline-light" >Back</a>
+<h1 class="mainTitle">Doctor | View Patient</h1>
 <p align="center">                            
 </div>
 <ol class="breadcrumb">

@@ -73,12 +73,12 @@ error:function (){}
 <section id="page-title">
 <div class="row">
 <div class="col-sm-8">
-<a href="dashboard.php" class="btn btn-outline-light" >Back</a>
-<h1 class="mainTitle">Patient | Add Patient</h1>
+<a href="dashboard.php" class="btn btn-outline-light" >Back to dashboard</a>
+<h1 class="mainTitle">Admin | Add Patient</h1>
 </div>
 <ol class="breadcrumb">
 <li>
-<span>Patient</span>
+<span>Admin</span>
 </li>
 <li class="active">
 <span>Add Patient</span>
@@ -144,14 +144,9 @@ Patient Address
 </label>
 <input type="text" name="patage" class="form-control"  placeholder="Enter Patient Age" required="true">
 </div>
-<div class="form-group">
-<label for="fess">
- Medical History
-</label>
-<textarea type="text" name="medhis" class="form-control"  placeholder="Enter Patient Medical History(if any)" required="true"></textarea>
-</div>	
 
-<button type="submit" name="submit" id="submit" class="btn btn-o btn-primary">
+
+<button type="submit" name="submit" id="submit" class="btn btn-primary">
 Add
 </button>
 </form>
