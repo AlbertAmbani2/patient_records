@@ -33,10 +33,12 @@ echo "<script>window.location.href ='index.php'</script>";
     
       <header id="menu-jk" class="text-light">
     
-        <div id="nav-head" class="bg-success header-nav">
+        <div id="nav-head" class="header-nav" style="background-color:#0093A7">
             <div class="container">
                 <div class="row">
-                    <div  style="font-weight:bold; font-size:24px; margin-top: 1% !important;">Patient Records System
+                    <div  style="font-weight:bold; font-size:24px; margin-top: 1% !important; left:10px;">
+                    <img src='assets/images/logo.jpeg' style="float: left;width:80px; height:80px;border-radius: 5px;left:5px;"/>
+                    Patient Records System
                        <a data-toggle="collapse" data-target="#menu" href="#menu" ><i class="fas d-block d-md-none small-menu fa-bars"></i></a>
                     </div>
                     <div id="menu" class="navbar-nav ml-auto d-none d-md-block nav-item">
@@ -56,32 +58,13 @@ echo "<script>window.location.href ='index.php'</script>";
     <div class="slider-detail">
 
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-            </ol>
-
-
-   
-
-
-            <div class="carousel-inner">
-                <div class="carousel-item ">
-                    <img class="d-block w-100" src="assets/images/homepage/home1.jpg" alt="Second slide">
-                    <div class="carousel-cover"></div>
-                    <div class="carousel-caption vdg-cur d-none d-md-block">
-                        <h5 class="animated bounceInDown">Kitui Referral Hospital</h5>
-            
-                         
-                    
-                    </div>
-                </div>
                 
+            <div> 
                 <div class="carousel-item active">
-                    <img class="d-block w-100" src="assets/images/homepage/home2.jpg" alt="Third slide">
-                      <div class="carousel-cover"></div>
+                    <img class="d-block w-100" src="assets/images/homepage/home2.jpg" alt="Homepage">
+                      
                     <div class="carousel-caption vdg-cur d-none d-md-block">
-                        <h5 class="animated bounceInDown">Kitui Refferal Hospital</h5>
+                        <h5 class="animated bounceInDown" style="color:white;">Kitui Refferal Hospital</h5>
             
                          
                     
@@ -90,14 +73,7 @@ echo "<script>window.location.href ='index.php'</script>";
                 </div>
                 
             </div>
-            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
+           
         </div>
 
 
@@ -106,7 +82,7 @@ echo "<script>window.location.href ='index.php'</script>";
   <!--  ************************* Logins ************************** -->
     
     
-     <section id="logins" class="our-blog container-fluid">
+  <section id="logins" class="our-blog container-fluid">
         <div class="container">
         <div class="inner-title">
 
@@ -114,7 +90,7 @@ echo "<script>window.location.href ='index.php'</script>";
             </div>
             <div class="col-sm-12 blog-cont">
                 <div class="row no-margin">
-                    <div class="col-sm-4 blog-smk">
+                    <div class="col-sm-6 blog-smk">
                         <div class="blog-single">
 
                                 <img src="assets/images/doctor.jpg" alt="">
@@ -128,7 +104,7 @@ echo "<script>window.location.href ='index.php'</script>";
                         </div>
                     </div>
                     
-                    <div class="col-sm-4 blog-smk">
+                    <div class="col-sm-6 blog-smk">
                         <div class="blog-single">
 
                                 <img src="assets/images/admin-login.jpg" alt="">
@@ -152,7 +128,7 @@ echo "<script>window.location.href ='index.php'</script>";
             </div>
             
         </div>
-    </section>  
+    </section> 
 
     
     <div class="copy">

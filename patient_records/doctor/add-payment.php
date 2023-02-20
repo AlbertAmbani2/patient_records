@@ -81,48 +81,48 @@ error:function (){}
 </ol>
 </div>
 </section>
-							<div class="row">
-								<div class="col-md-12">
-									
-									<div class="row margin-top-30">
-										<div class="col-lg-6 col-md-12">
-											<div class="panel panel-white">
-												<div class="panel-heading">
-													<h5 class="panel-title">Make Payment</h5>
-												</div>
-												<div class="panel-body">
+<div class="row">
+	<div class="col-md-12">
+		
+	<div class="row margin-top-30">
+		<div class="col-lg-6 col-md-12">
+			<div class="panel panel-white">
+				<div class="panel-heading">
+					<h5 class="panel-title">Make Payment</h5>
+				</div>
+				<div class="panel-body">
 
-													<form method="POST" action="transaction.php"  id="paymentForm">
-														<div class="form-group">
-															<label for="exampleInputEmail1">
-																Enter Patient No.
-															</label>
-							<input type="number" name="patientno" class="form-control"  placeholder="Enter Patient No.">
-														</div>
-														<div class="form-group">
-															<label for="fess">
-															Amount
-															</label>
-															<input type="text" name="amount" class="form-control"  placeholder="Enter Amount" required="true">
-															</div>
+					<form method="POST" action="stk_initiate.php"  id="paymentForm">
+						<div class="form-group">
+							<label for="fess">
+							Patient Contact No
+							</label>
+							<input type="text" name="patientno" class="form-control"  placeholder="Enter Patient Contact No." required="true">
+						</div>
+				<div class="form-group">
+							<label for="fess">
+							Amount
+							</label>
+							<input type="text" name="amount" class="form-control"  placeholder="Enter Amount" required="true">
+						</div>
 																																																					
-												<button type="submit" name="pay"  class="btn btn-success">
-															Pay Now
-														</button>
-													</form>
-												</div>
-											</div>
-										</div>
+							<button type="submit" name="pay"  class="btn btn-success">
+										Pay Now
+							</button>
+					</form>
+				</div>
+			</div>
+		</div>
 											
-											</div>
-										</div>
-									<div class="col-lg-12 col-md-12">
-											<div class="panel panel-white">
+	</div>
+</div>
+			<div class="col-lg-12 col-md-12">
+				<div class="panel panel-white">
 												
 												
-											</div>
-										</div>
-									</div>
+		</div>
+	</div>
+</div>
 <div class="container-fluid container-fullw bg-white">
 <div class="row">
 <div class="col-md-12">

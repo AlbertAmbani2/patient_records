@@ -25,7 +25,7 @@ header('location:manage-payment.php');
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>Doctor | Add Patient</title>
+		<title>Doctor | Edit Payment</title>
 		
 		<link href="http://fonts.googleapis.com/css?family=Lato:300,400,400italic,600,700|Raleway:300,400,500,600,700|Crete+Round:400italic" rel="stylesheet" type="text/css" />
 		<link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
@@ -42,7 +42,6 @@ header('location:manage-payment.php');
 		<link rel="stylesheet" href="assets/css/plugins.css">
 		<link rel="stylesheet" href="assets/css/themes/theme-1.css" id="skin_color" />
 
-
 	</head>
 	<body>
     
@@ -58,14 +57,14 @@ header('location:manage-payment.php');
 <div class="row">
 <div class="col-sm-8">
 <a href="manage-payment.php" class="btn btn-outline-light" >Back</a>
-<h1 class="mainTitle">Doctor | Update Payment</h1>
+<h1 class="mainTitle">Doctor | Edit Payment</h1>
 </div>
 <ol class="breadcrumb">
 <li>
 <span>Doctor</span>
 </li>
 <li class="active">
-<span>Update Payment</span>
+<span>Edit Payment</span>
 </li>
 </ol>
 </div>
@@ -77,7 +76,7 @@ header('location:manage-payment.php');
 <div class="col-lg-8 col-md-12">
 <div class="panel panel-white">
 <div class="panel-heading">
-<h5 class="panel-title">Update Payment</h5>
+<h5 class="panel-title">Edit Payment</h5>
 </div>
 <div class="panel-body">
 <form role="form" name="" method="post">
@@ -86,8 +85,8 @@ header('location:manage-payment.php');
  $ret=mysqli_query($con,"select * from tblpayment where ID='$eid'");
 $cnt=1;
 while ($row=mysqli_fetch_array($ret)) {
-
 ?>
+
 <div class="form-group">
 <label for="doctorname">
 Patient Name
@@ -116,7 +115,7 @@ Amount
 </div>
 
 <?php } ?>
-<button type="submit" name="submit" id="submit" class="btn btn-o btn-primary">
+<button type="submit" name="submit" id="submit" class="btn btn-primary">
 Update
 </button>
 </form>

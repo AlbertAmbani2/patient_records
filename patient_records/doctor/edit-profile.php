@@ -152,7 +152,7 @@ while($row=mysqli_fetch_array($ret))
 														<?php } ?>
 														
 														
-														<button type="submit" name="submit" class="btn btn-o btn-primary">
+														<button type="submit" name="submit" class="btn btn-primary">
 															Update
 														</button>
 													</form>
