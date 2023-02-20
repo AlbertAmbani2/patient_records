@@ -10,5 +10,5 @@ How to run the Auto/Taxi Stand Management Project Using PHP and MySQL
 Login Details
 Login Details for admin : admin/123456
 
-Login Details for Doctor: a3proh@gmail.com.com/doctor
+Login Details for Doctor: drchar@gmail.com/drchar1
 
