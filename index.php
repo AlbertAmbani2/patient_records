@@ -36,8 +36,8 @@ echo "<script>window.location.href ='index.php'</script>";
         <div id="nav-head" class="header-nav" style="background-color:#0093A7">
             <div class="container">
                 <div class="row">
-                    <div  style="font-weight:bold; font-size:24px; margin-top: 1% !important; left:10px;">
-                    <img src='assets/images/logo.jpeg' style="float: left;width:80px; height:80px;border-radius: 5px;left:5px;"/>
+                <li > <img src='assets/images/logo.jpeg' style="float: left; position: relative; margin: 10px 15px 15px 10px; width:40px; height:40px;border-radius:10px;"/></li>
+                    <div style="font-weight:bold; font-size:24px; margin-top: 1% !important;">
                     Patient Records System
                        <a data-toggle="collapse" data-target="#menu" href="#menu" ><i class="fas d-block d-md-none small-menu fa-bars"></i></a>
                     </div>
