@@ -5,13 +5,16 @@ if(isset($_POST['submit'])){
   date_default_timezone_set('Africa/Nairobi');
 
   # access token
-  $consumerKey = '4yNXbF4l5sVkVFfRltsYT9GAXXswmO8X'; //Fill with your app Consumer Key
-  $consumerSecret = 'sKi5eKl6dStk2V8H'; // Fill with your app Secret
+  $consumerKey = '7790UcT3kMLt6f3SBtoAiFrlDIQmcwJY'; //Fill with your app Consumer Key
+  $consumerSecret = 'HqwMRV7OLLOIaJov'; // Fill with your app Secret
+
+  $Passkey = 'bfb279f9aa9bdbcf158e97dd71a467cd2e0c893059b10f78e6b72ada1ed2c919';//enter the passkey here  
+
 
   # define the variales
   # provide the following details, this part is found on your test credentials on the developer account
   $BusinessShortCode = '174379';
-  $Passkey = 'bfb279f9aa9bdbcf158e97dd71a467cd2e0c893059b10f78e6b72ada1ed2c919';//enter the passkey here  
+  // $Passkey = '';//enter the passkey here  
   
   /*
     This are your info, for

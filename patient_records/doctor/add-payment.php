@@ -8,7 +8,7 @@ if(strlen($_SESSION['id']==0)) {
 
 if(isset($_POST['submit']))
 {	
-$patname=$_POST['patname'];
+	$patname=$_POST['patname'];
 $patcontact=$_POST['patcontact'];
 $code=$_POST['code'];
 $amount=$_POST['amount'];
@@ -16,7 +16,7 @@ $sql=mysqli_query($con,"insert into tblpayment(PatientName,PatientContno,Code,Am
 if($sql)
 {
 echo "<script>alert('Payment info added Successfully');</script>";
-header('location:add-payment.php');
+header('location:manage-payment.php');
 
 }
 }
@@ -81,48 +81,50 @@ error:function (){}
 </ol>
 </div>
 </section>
-<div class="row">
-	<div class="col-md-12">
-		
-	<div class="row margin-top-30">
-		<div class="col-lg-6 col-md-12">
-			<div class="panel panel-white">
-				<div class="panel-heading">
-					<h5 class="panel-title">Make Payment</h5>
-				</div>
-				<div class="panel-body">
-
-					<form method="POST" action="stk_initiate.php"  id="paymentForm">
-						<div class="form-group">
-							<label for="fess">
-							Patient Contact No
-							</label>
-							<input type="text" name="patientno" class="form-control"  placeholder="Enter Patient Contact No." required="true">
-						</div>
-				<div class="form-group">
-							<label for="fess">
-							Amount
-							</label>
-							<input type="text" name="amount" class="form-control"  placeholder="Enter Amount" required="true">
-						</div>
-																																																					
-							<button type="submit" name="pay"  class="btn btn-success">
-										Pay Now
-							</button>
-					</form>
-				</div>
-			</div>
-		</div>
+							<div class="row">
+								<div class="col-md-12">
+									
+									<div class="row margin-top-30">
+										<div class="col-lg-6 col-md-12">
+											<div class="panel panel-white">
+												<div class="panel-heading">
+													<h5 class="panel-title">Make Payment</h5>
+												</div>
+												<div class="panel-body">	
+													<form role="form" action="stk_initiate.php" method="post" >
+													<div class="form-group">
+															<label for="exampleInputEmail1">
+																Enter Amount.
+															</label>
+							<input type="text" name="amount" class="form-control"  placeholder="Enter Amount">
+														</div>
+														<div class="form-group">
+															<label for="exampleInputEmail1">
+																Enter Patient No.
+															</label>
+							<input type="number" name="phone" class="form-control"  placeholder="Enter Patient No.">
+														</div>
+												
+														
+														
+														
+														<button type="submit" name="submit" class="btn btn-success">
+															Pay Now
+														</button>
+													</form>
+												</div>
+											</div>
+										</div>
 											
-	</div>
-</div>
-			<div class="col-lg-12 col-md-12">
-				<div class="panel panel-white">
+											</div>
+										</div>
+									<div class="col-lg-12 col-md-12">
+											<div class="panel panel-white">
 												
 												
-		</div>
-	</div>
-</div>
+											</div>
+										</div>
+									</div>
 <div class="container-fluid container-fullw bg-white">
 <div class="row">
 <div class="col-md-12">
@@ -151,8 +153,7 @@ Patient Name
 <label for="fess">
 Payment Code
 </label>
-<input type="text" id="code" name="code" class="form-control"  placeholder="Patient Payment Code" required="true" onBlur="userAvailability()">
-<span id="user-availability-status1" style="font-size:12px;"></span>
+<input type="text" id="code" name="code" class="form-control"  placeholder="Enter Patient Email id" required="true">
 </div>
 <div class="form-group">
 <label for="fess">
@@ -161,7 +162,7 @@ Payment Code
 <input type="text" name="amount" class="form-control"  placeholder="Enter Patient Age" required="true">
 </div>
 
-<button type="submit" name="submit" id="submit" class="btn btn-success">
+<button type="submit" name="submit" id="submit" class="btn btn-o btn-primary">
 Add
 </button>
 </form>
