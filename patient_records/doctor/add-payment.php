@@ -69,6 +69,7 @@ error:function (){}
 <section id="page-title">
 <div class="row">
 <div class="col-sm-8">
+<a href="dashboard.php" class="btn btn-outline-light" >Back</a>
 <h1 class="mainTitle">Patient | Add Payment</h1>
 </div>
 <ol class="breadcrumb">
@@ -162,7 +163,7 @@ Payment Code
 <input type="text" name="amount" class="form-control"  placeholder="Enter Patient Age" required="true">
 </div>
 
-<button type="submit" name="submit" id="submit" class="btn btn-o btn-primary">
+<button type="submit" name="submit" id="submit" class="btn btn-success">
 Add
 </button>
 </form>

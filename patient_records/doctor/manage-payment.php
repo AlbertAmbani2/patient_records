@@ -40,14 +40,7 @@ if(strlen($_SESSION['id']==0)) {
 <div class="col-sm-8">
 <h1 class="mainTitle">Doctor | Manage Payment</h1>
 </div>
-<ol class="breadcrumb">
-<li>
-<span>Doctor</span>
-</li>
-<li class="active">
-<span>Manage Payment</span>
-</li>
-</ol>
+
 </div>
 </section>
 <div class="container-fluid container-fullw bg-white">

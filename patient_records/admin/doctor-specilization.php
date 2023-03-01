@@ -57,14 +57,7 @@ $_SESSION['msg']="data deleted !!";
 								<a href="dashboard.php" class="btn btn-outline-light" >Back</a>
 									<h1 class="mainTitle">Admin | Add Doctor Specialization</h1>
 								</div>
-								<ol class="breadcrumb">
-									<li>
-										<span>Admin</span>
-									</li>
-									<li class="active">
-										<span>Add Doctor Specialization</span>
-									</li>
-								</ol>
+								
 							</div>
 						</section>
 						<!-- end: PAGE TITLE -->

@@ -64,14 +64,7 @@ if(isset($_POST['submit']))
 <a href="manage-patient.php" class="btn btn-outline-light" >Back</a>
 <h1 class="mainTitle">Admin | View Patient</h1>
 </div>
-<ol class="breadcrumb">
-<li>
-<span>Admin</span>
-</li>
-<li class="active">
-<span>View Patient</span>
-</li>
-</ol>
+
 </div>
 </section>
 <div class="container-fluid container-fullw bg-white">

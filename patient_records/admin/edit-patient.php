@@ -62,14 +62,7 @@ header('location:manage-patient.php');
 <a href="manage-patient.php" class="btn btn-outline-light" >Back</a>
 <h1 class="mainTitle">Admin | Edit Patient</h1>
 </div>
-<ol class="breadcrumb">
-<li>
-<span>Admin</span>
-</li>
-<li class="active">
-<span>Edit Patient</span>
-</li>
-</ol>
+
 </div>
 </section>
 <div class="container-fluid container-fullw bg-white">

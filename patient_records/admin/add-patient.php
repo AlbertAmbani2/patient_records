@@ -76,14 +76,7 @@ error:function (){}
 <a href="dashboard.php" class="btn btn-outline-light" >Back to dashboard</a>
 <h1 class="mainTitle">Admin | Add Patient</h1>
 </div>
-<ol class="breadcrumb">
-<li>
-<span>Admin</span>
-</li>
-<li class="active">
-<span>Add Patient</span>
-</li>
-</ol>
+
 </div>
 </section>
 <div class="container-fluid container-fullw bg-white">

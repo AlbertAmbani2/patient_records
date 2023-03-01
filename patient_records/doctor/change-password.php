@@ -92,14 +92,7 @@ return true;
 								<div class="col-sm-8">
 									<h1 class="mainTitle">Doctor | Change Password</h1>
 																	</div>
-								<ol class="breadcrumb">
-									<li>
-										<span>Doctor</span>
-									</li>
-									<li class="active">
-										<span>Change Password</span>
-									</li>
-								</ol>
+								
 							</div>
 						</section>
 						<!-- end: PAGE TITLE -->

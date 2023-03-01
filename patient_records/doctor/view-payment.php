@@ -62,14 +62,7 @@ if(isset($_POST['submit']))
 <a href="manage-payment.php" class="btn btn-outline-light">Back</a>
 <h1 class="mainTitle">Doctor | Manage Payment</h1>
 </div>
-<ol class="breadcrumb">
-<li>
-<span>Doctor</span>
-</li>
-<li class="active">
-<span>Manage Payment</span>
-</li>
-</ol>
+
 </div>
 </section>
 <div class="container-fluid container-fullw bg-white">

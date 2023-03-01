@@ -63,14 +63,7 @@ $msg="Doctor Details updated Successfully";
 								<a href="manage-doctors.php" class="btn btn-outline-light" >Back</a>
 									<h1 class="mainTitle">Admin | Edit Doctor Details</h1>
 																	</div>
-								<ol class="breadcrumb">
-									<li>
-										<span>Admin</span>
-									</li>
-									<li class="active">
-										<span>Edit Doctor Details</span>
-									</li>
-								</ol>
+								
 							</div>
 						</section>
 						<!-- end: PAGE TITLE -->

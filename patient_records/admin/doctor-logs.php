@@ -43,14 +43,7 @@ if(strlen($_SESSION['id']==0)) {
 								<div class="col-sm-8">
 									<h1 class="mainTitle">Admin  | Doctor Session Logs</h1>
 																	</div>
-								<ol class="breadcrumb">
-									<li>
-										<span>Admin </span>
-									</li>
-									<li class="active">
-										<span>Doctor Session Logs</span>
-									</li>
-								</ol>
+								
 							</div>
 						</section>
 						<!-- end: PAGE TITLE -->

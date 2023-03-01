@@ -97,7 +97,7 @@ return true;
 					</form>
 
 					<div class="copyright">
-				<span class="text-bold text-uppercase"> Hospital Management System</span>
+				<span class="text-bold text-uppercase"> Patient Records System</span>
 					</div>
 			
 				</div>

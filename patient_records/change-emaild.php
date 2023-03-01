@@ -55,14 +55,7 @@ $msg="Your email updated Successfully";
 								<div class="col-sm-8">
 									<h1 class="mainTitle">User | Edit Profile</h1>
 																	</div>
-								<ol class="breadcrumb">
-									<li>
-										<span>User </span>
-									</li>
-									<li class="active">
-										<span>Edit Profile</span>
-									</li>
-								</ol>
+								
 							</div>
 						</section>
 						<!-- end: PAGE TITLE -->

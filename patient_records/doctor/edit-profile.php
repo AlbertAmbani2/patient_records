@@ -56,14 +56,7 @@ echo "<script>alert('Doctor Details updated Successfully');</script>";
 								<div class="col-sm-8">
 									<h1 class="mainTitle">Doctor | Edit Doctor Details</h1>
 																	</div>
-								<ol class="breadcrumb">
-									<li>
-										<span>Doctor</span>
-									</li>
-									<li class="active">
-										<span>Edit Doctor Details</span>
-									</li>
-								</ol>
+								
 							</div>
 						</section>
 						<!-- end: PAGE TITLE -->

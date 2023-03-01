@@ -89,14 +89,7 @@ error:function (){}
 								<a href="dashboard.php" class="btn btn-outline-light" >Back to dashboard</a>
 									<h1 class="mainTitle">Admin | Add Doctor</h1>
 																	</div>
-								<ol class="breadcrumb">
-									<li>
-										<span>Admin</span>
-									</li>
-									<li class="active">
-										<span>Add Doctor</span>
-									</li>
-								</ol>
+								
 							</div>
 						</section>
 						<!-- end: PAGE TITLE -->
