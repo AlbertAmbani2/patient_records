@@ -25,6 +25,15 @@ echo "<script>window.location.href ='index.php'</script>";
     <link rel="stylesheet" href="assets/css/fontawsom-all.min.css">
      <link rel="stylesheet" href="assets/css/animate.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <script>
+        function preventNewTab(event) {
+            event.preventDefault();
+            window.location.href = event.target.href;
+        }
+        document.querySelectorAll('#login.php, #logout.php')forEach(link => {
+            link.addEventListener('click', preventNewTab);
+        });
+    </script>
 </head>
 
     <body>
@@ -33,7 +42,7 @@ echo "<script>window.location.href ='index.php'</script>";
     
       <header id="menu-jk" class="text-light">
     
-        <div id="nav-head" class="header-nav" style="background-color:#0093A7">
+        <div id="nav-head" class="header-nav" style="background-color:#0093A7;">
             <div class="container">
                 <div class="row">
                 <li > <img src='assets/images/logo.jpeg' style="float: left; position: relative; margin: 10px 15px 15px 10px; width:50px; height:50px;border-radius:25px;"/></li>

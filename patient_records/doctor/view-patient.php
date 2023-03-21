@@ -18,7 +18,7 @@ if(isset($_POST['submit']))
  
       $query.=mysqli_query($con, "insert   tblmedicalhistory(PatientID,BloodPressure,BloodSugar,Weight,Temperature,MedicalPres)value('$vid','$bp','$bs','$weight','$temp','$pres')");
     if ($query) {
-    echo '<script>alert("Medicle history has been added.")</script>';
+    echo '<script>alert("Medical history has been added.")</script>';
     echo "<script>window.location.href ='manage-patient.php'</script>";
   }
   else
@@ -78,8 +78,8 @@ if(isset($_POST['submit']))
 <div class="col-md-12">
 <h5 class="over-title margin-bottom-15">Manage <span class="text-bold">Patients</span></h5>
 <?php
-                               $vid=$_GET['viewid'];
-                               $ret=mysqli_query($con,"select * from tblpatient where ID='$vid'");
+      $vid=$_GET['viewid'];
+      $ret=mysqli_query($con,"select * from tblpatient where ID='$vid'");
 $cnt=1;
 while ($row=mysqli_fetch_array($ret)) {
                                ?>
@@ -183,9 +183,9 @@ while ($row=mysqli_fetch_array($ret)) {
     <input name="weight" placeholder="Weight" class="form-control wd-450" required="true"></td>
   </tr>
   <tr>
-    <th>Body Temprature :</th>
+    <th>Body Temperature :</th>
     <td>
-    <input name="temp" placeholder="Blood Sugar" class="form-control wd-450" required="true"></td>
+    <input name="temp" placeholder="Body temperature" class="form-control wd-450" required="true"></td>
   </tr>
                          
      <tr>

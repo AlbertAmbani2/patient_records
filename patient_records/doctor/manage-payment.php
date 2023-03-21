@@ -62,7 +62,7 @@ if(strlen($_SESSION['id']==0)) {
 <tbody>
 <?php
 $docid=$_SESSION['id'];
-$sql=mysqli_query($con,"select * from tblpayment ");
+$sql=mysqli_query($con,"select * from tblpayment  ");
 $cnt=1;
 while($row=mysqli_fetch_array($sql))
 {
@@ -76,13 +76,14 @@ while($row=mysqli_fetch_array($sql))
 </td>
 <td>
 
-<a href="edit-payment.php?editid=<?php echo $cnt;?>">Edit <i class="fa fa-edit"></i></a>
+<a href="edit-payment.php?editid=<?php echo $cnt;?>">Edit <i class="fa fa-edit"></i></a>|| <a href="report.php?viewid=<?php echo $row['ID'];?>"><i class="fa fa-eye"></i></a>
 
 </td>
 </tr>
 <?php 
 $cnt=$cnt+1;
- }?></tbody>
+ }?>
+ </tbody>
 </table>
 </div>
 </div>

@@ -1,37 +1,17 @@
 <?php
 session_start();
 error_reporting(0);
+//include('manage-payment.php');
 include('include/config.php');
 if(strlen($_SESSION['id']==0)) {
  header('location:logout.php');
   } else{
-if(isset($_POST['submit']))
-  {
-    
-    $eid=$_GET['viewid'];
-	$patname=$_POST['patname'];
-	$patcontact=$_POST['patcontact'];
-	$code=$_POST['code'];
-	$amount=$_POST['amount'];
-	
-    
-    $query.=mysqli_query($con,"insert tblpaymenthistory set PatientName='$patname',PatientContno='$patcontact',Code='$code',Amount='$amount' where ID='$eid'");
-	if($query)
-{
-    echo '<script>alert("Medicle history has been added.")</script>';
-    echo "<script>window.location.href ='manage-payment.php'</script>";
-  }
-  else
-    {
-      echo '<script>alert("Something Went Wrong. Please try again")</script>';
-    }  
-}
 
 ?>
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>Doctor | Manage Patients</title>
+		<title>Doctor | Add Payment</title>
 		
 		<link href="http://fonts.googleapis.com/css?family=Lato:300,400,400italic,600,700|Raleway:300,400,500,600,700|Crete+Round:400italic" rel="stylesheet" type="text/css" />
 		<link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
@@ -47,63 +27,77 @@ if(isset($_POST['submit']))
 		<link rel="stylesheet" href="assets/css/styles.css">
 		<link rel="stylesheet" href="assets/css/plugins.css">
 		<link rel="stylesheet" href="assets/css/themes/theme-1.css" id="skin_color" />
+
+	<script>
+function userAvailability() {
+$("#loaderIcon").show();
+jQuery.ajax({
+url: "check_availability.php",
+data:'email='+$("#code").val(),
+type: "POST",
+success:function(data){
+$("#user-availability-status1").html(data);
+$("#loaderIcon").hide();
+},
+error:function (){}
+});
+}
+</script>
 	</head>
 	<body>
 		<div id="app">		
 <?php include('include/sidebar.php');?>
 <div class="app-content">
 <?php include('include/header.php');?>
+						
 <div class="main-content" >
 <div class="wrap-content container" id="container">
 						<!-- start: PAGE TITLE -->
 <section id="page-title">
 <div class="row">
 <div class="col-sm-8">
-<a href="manage-payment.php" class="btn btn-outline-light">Back</a>
+<a href="manage-payment.php" class="btn btn-outline-light" >Back</a>
 <h1 class="mainTitle">Doctor | Manage Payment</h1>
 </div>
-
 </div>
 </section>
+							
 <div class="container-fluid container-fullw bg-white">
 <div class="row">
 <div class="col-md-12">
+<div class="row margin-top-30">
+<div class="col-lg-8 col-md-12">
+<div class="panel panel-white">
+<div class="panel-heading">
 <h5 class="over-title margin-bottom-15">Manage <span class="text-bold">Payment</span></h5>
-<?php
-                               $eid=$_GET['viewid'];
-                               $ret=mysqli_query($con,"select * from tblpaymenthistory where ID='$eid'");
-$cnt=1;
-while ($row=mysqli_fetch_array($ret)) {
-                               ?>
-<table border="1" class="table table-bordered">
- <tr align="center">
-<td colspan="4" style="font-size:20px;color:blue">
- Patient Details</td></tr>
- 
- <div class="form-group">
-<label for="doctorname">
-Patient Name
-</label>
-<input type="text" name="patname" class="form-control"  value="<?php  echo $row['PatientName'];?>" required="true">
 </div>
-
+<div class="panel-body">
+<form role="form" name="" method="post">
+<?php
+$docid=$_SESSION['id'];
+$sql=mysqli_query($con,"select * from tblpayment where id='$docid' ");
+$cnt=1;
+while($row=mysqli_fetch_array($sql))
+{
+?>
 <div class="form-group">
 <label for="doctorname">
 Patient Name
 </label>
-<input type="text" name="patname" class="form-control"  value="<?php  echo $row['PatientName'];?>" required="true">
+<text><?php  echo $row['PatientName'];?></text>
 </div>
 <div class="form-group">
 <label for="fess">
 Patient Contact No
 </label>
-<input type="text" name="patcontact" class="form-control"  value="<?php  echo $row['PatientContno'];?>" required="true" maxlength="10" pattern="[0-9]+">
+<text><?php  echo $row['PatientContno'];?></text>
 </div>
+
 <div class="form-group">
 <label for="fess">
 Payment Code
 </label>
-<input type="text" id="code" name="code" class="form-control"  value="<?php  echo $row['Code'];?>">
+<text><?php  echo $row['Code'];?></text>
 
 </div>
 
@@ -111,28 +105,35 @@ Payment Code
 <label for="address">
 Amount
 </label>
-<textarea type="text" name="amount" class="form-control" required="true"><?php  echo $row['Amount'];?></textarea>
+<text><?php  echo $row['Amount'];?></text>
 </div>
-  
- 
-<?php }?>
-</table>
+<?php 
+$cnt=$cnt+1;
+ }?>
+</form>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-lg-12 col-md-12">
+<div class="panel panel-white">
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>				
+</div>
+</div>
+</div>
 
-                          
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
 			<!-- start: FOOTER -->
-	<?php include('include/footer.php');?>
+<?php include('include/footer.php');?>
 			<!-- end: FOOTER -->
 		
 			<!-- start: SETTINGS -->
-	<?php include('include/setting.php');?>
+<?php include('include/setting.php');?>
 			
 			<!-- end: SETTINGS -->
 		</div>
@@ -169,3 +170,4 @@ Amount
 	</body>
 </html>
 <?php } ?>
+		

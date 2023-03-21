@@ -85,6 +85,27 @@ Total Patients :<?php echo htmlentities($num_rows);
 									</div>
 								</div>
 								
+								<!-- Payment module -->
+								<div class="col-sm-4">      
+									<div class="panel panel-white no-radius text-center">
+										<div class="panel-body">
+											<span class="fa-stack fa-2x"> <i class="fa fa-square fa-stack-2x text-primary"></i> <i class="fa fa-credit-card fa-stack-1x fa-inverse"></i> </span>
+											<h2 class="StepTitle">Manage Payment</h2>
+											
+											<p class="links cl-effect-1">
+												<a href="manage-payment.php">
+<?php $result = mysqli_query($con,"SELECT * FROM tblpayment ");
+$num_rows = mysqli_num_rows($result);
+{
+?>
+Total Patients :<?php echo htmlentities($num_rows);  
+} ?>		
+</a>
+											</p>
+										</div>
+									</div>
+								</div>
+								
 							</div>
 						</div>
 					</div>

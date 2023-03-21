@@ -72,7 +72,7 @@
 									
 								</ul>
 								</li>
-<li>
+								
 								<a href="search.php">
 									<div class="item-content">
 										<div class="item-media">

@@ -11,7 +11,7 @@ if(isset($_POST['submit'])){
   $Passkey = 'bfb279f9aa9bdbcf158e97dd71a467cd2e0c893059b10f78e6b72ada1ed2c919';//enter the passkey here  
 
 
-  # define the variales
+  # define the variables
   # provide the following details, this part is found on your test credentials on the developer account
   $BusinessShortCode = '174379';
   // $Passkey = '';//enter the passkey here  
